@@ -1,0 +1,19 @@
+{
+    "name": "music-player",
+    "version": "1.0.0",
+    "description": "Music Player App ",
+    "main": "index.js",
+    "scripts": {
+        "dev": "npx tailwindcss -i src/tailwind.css -o public/css/style.css --watch"
+    },
+    "keywords": [
+        "Music",
+        "Player",
+        "Online"
+    ],
+    "author": "Yusharnadi",
+    "license": "ISC",
+    "devDependencies": {
+        "tailwindcss": "^3.3.1"
+    }
+}
