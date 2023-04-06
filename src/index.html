@@ -14,10 +14,10 @@
         />
         <link rel="stylesheet" href="../public/css/style.css" />
     </head>
-    <body class="text-zinc-50">
-        <div class="flex flex-col h-screen w-full overflow-y-hidden">
+    <body class="text-zinc-50 overflow-x-hidden">
+        <div class="flex flex-col h-screen w-full ">
             <div class="main-content flex-1 flex">
-                <div class="sidebar w-60 p-6 bg-dark-500 border-r-[1px] border-r-dark-100">
+                <div class="sidebar flex-shrink-0 w-60 p-6 bg-dark-500 border-r-[1px] border-r-dark-100">
                     <a href="#"><img src="../public/img/logo.png" alt="Logo" /></a>
                     <ul class="my-16">
                         <li class="py-4 px-2 group hover:bg-primary rounded-md">
@@ -55,15 +55,15 @@
                         </li>
                     </ul>
                 </div>
-                <div class="main bg-dark-900 flex-1 flex">
-                    <div class="mid-content flex-1">
+                <div class="main bg-dark-900 flex flex-1">
+                    <div class="mid-content w-3/4">
                         <div class="featured-song pt-10 px-14">
                             <div class="relative bg-black w-full h-[453px] rounded-md">
                                 <img class="object-cover object-center h-full w-full" src="../public/img/Banner-image.png" alt="song cover" />
                                 <div class="gradient absolute top-0 left-0 bg-gradient-to-t from-black w-full h-full"></div>
                                 <div class="absolute top-0 left-0 bg-transparent text-zin flex flex-col justify-between items-end w-full h-full py-4 px-8">
                                     <div class="search self-center w-2/3">
-                                        <form class="bg-white text-dark-500 text-xl p-3 rounded-md flex items-center" action="#">
+                                        <form class="bg-white text-dark-500 text-xl p-3 rounded-md flex items-center overflow-x-hidden" action="#">
                                             <label for="search" class="cursor-pointer""><i class="bi bi-search"></i></label>
                                             <input
                                                 id="search"
@@ -89,8 +89,60 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="new-release py-4 px-8">
+                            <div class="flex items-center mb-4">
+                                    <p class="font-semibold text-xl mr-2">New Release</p>
+                                    <a href="#"><i class="bi bi-play-circle-fill text-xl text-accent"></i></a>
+                                    <a href="#" class="text-accent ml-auto">See more</a>
+                            </div>
+                            <div class="swiper flex overflow-x-hidden">
+                                <div class="new-release-item w-44 mr-2">
+                                    <div class="w-44 aspect-square">
+                                        <img class="object-fill w-full h-full" src="../public/img/album-cover-2.png" alt="song-1">
+                                    </div>
+                                    <p class="font-semibold">Red (Taylor's Version)</p>
+                                    <p class="font-normal text-dark-100 text-sm">Taylor Swift</p>
+                                </div>
+                                <div class="new-release-item w-44 mr-2">
+                                    <div class="w-44 aspect-square">
+                                        <img class="object-fill w-full h-full" src="../public/img/album-cover-3.png" alt="song-1">
+                                    </div>
+                                    <p class="font-semibold">Need to know</p>
+                                    <p class="font-normal text-dark-100 text-sm">Doja Cat</p>
+                                </div>
+                                <div class="new-release-item w-44 mr-2">
+                                    <div class="w-44 aspect-square">
+                                        <img class="object-fill w-full h-full" src="../public/img/album-cover-4.png" alt="song-1">
+                                    </div>
+                                    <p class="font-semibold">After Hours</p>
+                                    <p class="font-normal text-dark-100 text-sm">The Weeknd</p>
+                                </div>
+                                <div class="new-release-item w-44 mr-2">
+                                    <div class="w-44 aspect-square">
+                                        <img class="object-fill w-full h-full" src="../public/img/album-cover-1.png" alt="song-1">
+                                    </div>
+                                    <p class="font-semibold">On The Ground</p>
+                                    <p class="font-normal text-dark-100 text-sm">Rose</p>
+                                </div>
+                                <div class="new-release-item w-44 mr-2">
+                                    <div class="w-44 aspect-square">
+                                        <img class="object-fill w-full h-full" src="../public/img/album-cover-5.png" alt="song-1">
+                                    </div>
+                                    <p class="font-semibold">Hit Machine</p>
+                                    <p class="font-normal text-dark-100 text-sm">Soundwave</p>
+                                </div>
+                                <!-- <div class="new-release-item w-44 mr-2">
+                                    <div class="w-44 aspect-square">
+                                        <img class="object-fill w-full h-full" src="../public/img/album-cover-2.png" alt="song-1">
+                                    </div>
+                                    <p class="font-semibold">Red (Taylor's Version)</p>
+                                    <p class="font-normal text-dark-100 text-sm">Taylor Swift</p>
+                                </div> -->
+                            </div>
+                            
+                        </div>
                     </div>
-                    <div class="right-content flex flex-col w-[438px] py-8">
+                    <div class="right-content flex flex-col w-1/4 min-w-[300px] py-8 flex-shrink-0">
                         <p>Top Stream Realtime</p>
                         <p>Categories</p>
                     </div>
