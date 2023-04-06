@@ -55,7 +55,46 @@
                         </li>
                     </ul>
                 </div>
-                <div class="main bg-dark-900 flex-1">Main</div>
+                <div class="main bg-dark-900 flex-1 flex">
+                    <div class="mid-content flex-1">
+                        <div class="featured-song pt-10 px-14">
+                            <div class="relative bg-black w-full h-[453px] rounded-md">
+                                <img class="object-cover object-center h-full w-full" src="../public/img/Banner-image.png" alt="song cover" />
+                                <div class="gradient absolute top-0 left-0 bg-gradient-to-t from-black w-full h-full"></div>
+                                <div class="absolute top-0 left-0 bg-transparent text-zin flex flex-col justify-between items-end w-full h-full py-4 px-8">
+                                    <div class="search self-center w-2/3">
+                                        <form class="bg-white text-dark-500 text-xl p-3 rounded-md flex items-center" action="#">
+                                            <label for="search" class="cursor-pointer""><i class="bi bi-search"></i></label>
+                                            <input
+                                                id="search"
+                                                class="outline-none text-dark-400 text-base ml-4 flex-1 
+                                                type="text"
+                                                placeholder="Search artist, songs, albums..."
+                                            />
+                                            <a href="" class="border-l-2 border-inherit pl-4"><i class="bi bi-mic-fill"></i></a>
+                                        </form>
+                                    </div>
+                                    <div class="song-info">
+                                        <div class="song-title text-right mb-10">
+                                            <p class="uppercase font-bold text-sm mb-8">featured songs</p>
+                                            <p class="font-light text-2xl tracking-widest">Post Malone</p>
+                                            <p class="font-bold text-[38px]">Circles</p>
+                                        </div>
+                                        <div class="song-control flex items-center text-dark-100 text-2xl font-bold">
+                                            <a href="#" class="mr-4"><i class="bi bi-three-dots"></i></a>
+                                            <a href="#" class="mr-4"><i class="bi bi-heart"></i></a>
+                                            <a href="#" class="rounded-md bg-primary py-2 px-8 text-zinc-50 hover:bg-accent">Play</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-content flex flex-col w-[438px] py-8">
+                        <p>Top Stream Realtime</p>
+                        <p>Categories</p>
+                    </div>
+                </div>
             </div>
             <div class="player-control flex-none h-20 flex justify-between items-center bg-dark-500 border-t-[1px] border-t-dark-100">
                 <div class="w-1/5 text-white flex justify-center items-center">
