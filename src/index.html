@@ -4,7 +4,8 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Music Player</title>
+        <link rel="shortcut icon" href="../public/img/favicon.png" type="image/x-icon" />
+        <title>AUDITICA | Enjoy Your Music Streaming</title>
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.4/font/bootstrap-icons.min.css"
@@ -15,7 +16,7 @@
         <link rel="stylesheet" href="../public/css/style.css" />
     </head>
     <body class="text-zinc-50 overflow-x-hidden">
-        <div class="flex flex-col h-screen w-full">
+        <div class="flex flex-col w-full mb-20">
             <div class="main-content flex-1 flex">
                 <div class="sidebar flex-shrink-0 w-60 p-6 bg-dark-500 border-r-[1px] border-r-dark-100">
                     <a href="#"><img src="../public/img/logo.png" alt="Logo" /></a>
@@ -56,9 +57,11 @@
                     </ul>
                 </div>
                 <div class="main bg-dark-900 flex flex-1">
+                    <!-- MID CONTENT  -->
                     <div class="mid-content w-3/4">
-                        <div class="featured-song pt-10 px-14">
-                            <div class="relative bg-black w-full h-[453px] rounded-md">
+                        <!-- FEATURED SONG  -->
+                        <div class="featured-song pt-4 px-14">
+                            <div class="relative bg-black w-full h-[453px] rounded-lg overflow-hidden">
                                 <img class="object-cover object-center h-full w-full" src="../public/img/Banner-image.png" alt="song cover" />
                                 <div class="gradient absolute top-0 left-0 bg-gradient-to-t from-black w-full h-full"></div>
                                 <div class="absolute top-0 left-0 bg-transparent text-zin flex flex-col justify-between items-end w-full h-full py-4 px-8">
@@ -85,6 +88,9 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- END FEATURED SONG  -->
+
+                        <!-- NEW RELEASE  -->
                         <div class="new-release py-4 px-8">
                             <div class="flex items-center mb-4">
                                 <p class="font-semibold text-xl mr-2">New Release</p>
@@ -137,6 +143,8 @@
                             </div>
                         </div>
                         <!-- END NEW RELEASE  -->
+
+                        <!-- YOU MAY LIKE  -->
                         <div class="you-may-like py-4 px-8">
                             <div class="flex items-center">
                                 <p class="font-semibold text-xl mr-2 mb-4">You May Like</p>
@@ -213,7 +221,9 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- END YOU MAY LIKE  -->
 
+                        <!-- RECENTLY PLAYED-->
                         <div class="recently-played py-4 px-8">
                             <div class="flex items-center mb-4">
                                 <p class="font-semibold text-xl mr-2">Recently Played</p>
@@ -240,7 +250,7 @@
 
                                 <div class="flex items-center mb-4">
                                     <div class="w-2/5 flex items-center">
-                                        <span class="font-semibold text-dark-600">1</span>
+                                        <span class="font-semibold text-dark-600">2</span>
                                         <div class="w-12 ml-4 aspect-square rounded-md bg-dark-500">
                                             <img class="object-fill w-full" src="../public/img/album-cover-1.png" alt="played 1" />
                                         </div>
@@ -254,13 +264,34 @@
                                         <i class="bi bi-list"></i>
                                     </div>
                                 </div>
+
+                                <div class="flex items-center mb-4">
+                                    <div class="w-2/5 flex items-center">
+                                        <span class="font-semibold text-dark-600">3</span>
+                                        <div class="w-12 ml-4 aspect-square rounded-md bg-dark-500">
+                                            <img class="object-fill w-full" src="../public/img/album-cover-3.png" alt="played 1" />
+                                        </div>
+                                        <p class="flex-1 ml-2 text-[#AFB6B2] font-semibold">Need To Know</p>
+                                    </div>
+                                    <p class="w-1/5 text-dark-100">Doja Cat</p>
+                                    <p class="w-1/5 text-dark-100">Album</p>
+                                    <p></p>
+                                    <div class="w-1/5 flex items-center justify-evenly text-[#AFB6B2]">
+                                        <span>3:54</span>
+                                        <i class="bi bi-heart"></i>
+                                        <i class="bi bi-list"></i>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+                        <!-- END RECENTLY PLAYED-->
                     </div>
+                    <!-- END MID CONTENT  -->
 
                     <!-- RIGHT SIDEBAR  -->
-                    <div class="right-content flex flex-col w-1/4 min-w-[300px] py-8 flex-shrink-0 pr-2">
-                        <div class="top-stream bg-[#1E1E1E] p-3">
+                    <div class="right-content flex flex-col w-1/4 min-w-[300px] py-4 flex-shrink-0 pr-2">
+                        <!-- TOP STREAM-->
+                        <div class="top-stream bg-[#1E1E1E] p-3 rounded-lg">
                             <div class="flex justify-between items-center">
                                 <h3 class="font-bold text-lg text-zinc-50">Top Stream Realtime</h3>
                                 <div class="flex bg-[#49504D] p-1 rounded-[3px] justify-between items-center">
@@ -345,7 +376,7 @@
 
                                 <div class="top-stream-item flex justify-between items-center mt-2 border-b-2 border-dark-600 py-2">
                                     <div class="flex items-center">
-                                        <span class="mr-4 font-semibold text-dark-600">1</span>
+                                        <span class="mr-4 font-semibold text-dark-600">5</span>
                                         <div class="w-14 aspect-square rounded-md mr-2 overflow-hidden">
                                             <img class="object-fill w-full" src="../public/img/album-cover-6.png" alt="album-1" />
                                         </div>
@@ -363,7 +394,24 @@
 
                                 <div class="top-stream-item flex justify-between items-center mt-2 border-b-2 border-dark-600 py-2">
                                     <div class="flex items-center">
-                                        <span class="mr-4 font-semibold text-dark-600">2</span>
+                                        <span class="mr-4 font-semibold text-dark-600">6</span>
+                                        <div class="w-14 aspect-square rounded-md mr-2 overflow-hidden">
+                                            <img class="object-fill w-full" src="../public/img/album-cover-9.png" alt="album-2" />
+                                        </div>
+                                        <div>
+                                            <p class="font-semibold text-zinc-50">Easy On Me</p>
+                                            <p class="text-[#AFB6B2]">Adele</p>
+                                        </div>
+                                    </div>
+                                    <div class="w-24 flex justify-between">
+                                        <span>3:54</span>
+                                        <i class="bi bi-heart"></i>
+                                        <i class="bi bi-list"></i>
+                                    </div>
+                                </div>
+                                <div class="top-stream-item flex justify-between items-center mt-2 border-b-2 border-dark-600 py-2">
+                                    <div class="flex items-center">
+                                        <span class="mr-4 font-semibold text-dark-600">7</span>
                                         <div class="w-14 aspect-square rounded-md mr-2 overflow-hidden">
                                             <img class="object-fill w-full" src="../public/img/album-cover-9.png" alt="album-2" />
                                         </div>
@@ -380,45 +428,140 @@
                                 </div>
                             </div>
                         </div>
-                        <p>Categories</p>
-                    </div>
-                </div>
-            </div>
-            <div class="player-control flex-none h-20 flex justify-between items-center bg-dark-500 border-t-[1px] border-t-dark-100">
-                <div class="w-1/5 text-white flex justify-center items-center">
-                    <a href="#" class="hover:text-primary"><i class="bi bi-shuffle text-2xl mr-2"></i></a>
-                    <a href="#" class="hover:text-accent"><i class="bi bi-caret-left-fill text-2xl mr-2"></i></a>
-                    <a href="#" class="hover:text-accent"><i class="bi bi-pause-circle-fill text-4xl mr-2"></i></a>
-                    <a href="#" class="hover:text-accent"><i class="bi bi-caret-right-fill text-2xl mr-2"></i></a>
-                    <a href="#" class="hover:text-accent"><i class="bi bi-repeat text-2xl"></i></a>
-                </div>
-                <div class="w-3/5 flex justify-center px-4">
-                    <div class="w-14 h-14 mr-40 flex-shrink-0">
-                        <img class="w-full h-full object-fill" src="../public/img/album-cover-1.png" alt="on the ground" />
-                    </div>
-                    <div class="flex flex-col items-center w-2/3">
-                        <div class="song flex items-center">
-                            <p class="text-white text-lg font-semibold">On the Ground</p>
-                            <span class="bi bi-dot mx-2"></span>
-                            <p class="text-dark-100 text-md">Rose</p>
-                        </div>
-                        <div class="progress flex items-center w-full">
-                            <p>2:45</p>
-                            <div class="rounded-full bg-white h-1 flex-1 mx-2 overflow-x-hidden">
-                                <div class="bg-primary w-1/2 h-1"></div>
+                        <!-- END TOP STREAM-->
+
+                        <!-- CATEGORIES-->
+                        <div class="categories my-4">
+                            <div class="flex justify-between items-center py-4">
+                                <h3 class="font-bold text-lg text-zinc-50">Categories</h3>
+                                <a href="#" class="text-accent">See All</a>
                             </div>
-                            <p>2:45</p>
+                            <div class="grid grid-cols-2 gap-2">
+                                <div class="group relative h-[92px] rounded-md bg-slate-900 overflow-hidden text-zinc-50 text-xl font-semibold">
+                                    <a href="#">
+                                        <img
+                                            class="object-cover w-full h-full grayscale-0 group-hover:grayscale"
+                                            src="../public/img/bg-category-1.png"
+                                            alt="bg-category-1"
+                                        />
+                                        <h4 class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2">Pop</h4>
+                                    </a>
+                                </div>
+                                <div class="group relative h-[92px] rounded-md bg-slate-900 overflow-hidden text-zinc-50 text-xl font-semibold">
+                                    <a href="#">
+                                        <img
+                                            class="object-cover w-full h-full grayscale-0 group-hover:grayscale"
+                                            src="../public/img/bg-category-2.png"
+                                            alt="bg-category-1"
+                                        />
+                                        <h4 class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2">Chill</h4>
+                                    </a>
+                                </div>
+                                <div class="group relative h-[92px] rounded-md bg-slate-900 overflow-hidden text-zinc-50 text-xl font-semibold">
+                                    <a href="#">
+                                        <img
+                                            class="object-cover w-full h-full grayscale-0 group-hover:grayscale"
+                                            src="../public/img/bg-category-3.png"
+                                            alt="bg-category-1"
+                                        />
+                                        <h4 class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2">Podcast</h4>
+                                    </a>
+                                </div>
+                                <div class="group relative h-[92px] rounded-md bg-slate-900 overflow-hidden text-zinc-50 text-xl font-semibold">
+                                    <a href="#">
+                                        <img
+                                            class="object-cover w-full h-full grayscale-0 group-hover:grayscale"
+                                            src="../public/img/bg-category-4.png"
+                                            alt="bg-category-1"
+                                        />
+                                        <h4 class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2">Dangdut</h4>
+                                    </a>
+                                </div>
+                                <div class="group relative h-[92px] rounded-md bg-slate-900 overflow-hidden text-zinc-50 text-xl font-semibold">
+                                    <a href="#">
+                                        <img
+                                            class="object-cover w-full h-full grayscale-0 group-hover:grayscale"
+                                            src="../public/img/bg-category-5.png"
+                                            alt="bg-category-1"
+                                        />
+                                        <h4 class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2">Romance</h4>
+                                    </a>
+                                </div>
+                                <div class="group relative h-[92px] rounded-md bg-slate-900 overflow-hidden text-zinc-50 text-xl font-semibold">
+                                    <a href="#">
+                                        <img
+                                            class="object-cover w-full h-full grayscale-0 group-hover:grayscale"
+                                            src="../public/img/bg-category-6.png"
+                                            alt="bg-category-1"
+                                        />
+                                        <h4 class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2">Hip Hop</h4>
+                                    </a>
+                                </div>
+                                <div class="group relative h-[92px] rounded-md bg-slate-900 overflow-hidden text-zinc-50 text-xl font-semibold">
+                                    <a href="#">
+                                        <img
+                                            class="object-cover w-full h-full grayscale-0 group-hover:grayscale"
+                                            src="../public/img/bg-category-7.png"
+                                            alt="bg-category-1"
+                                        />
+                                        <h4 class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2">Rock</h4>
+                                    </a>
+                                </div>
+                                <div class="group relative h-[92px] rounded-md bg-slate-900 overflow-hidden text-zinc-50 text-xl font-semibold">
+                                    <a href="#">
+                                        <img
+                                            class="object-cover w-full h-full grayscale-0 group-hover:grayscale"
+                                            src="../public/img/bg-category-8.png"
+                                            alt="bg-category-1"
+                                        />
+                                        <h4 class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2">Jazz</h4>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
+                        <!-- END CATEGORIES-->
                     </div>
-                </div>
-                <div class="w-1/5 h-full border-l-[1px] border-l-dark-100 flex items-center justify-center text-xl">
-                    <a href="#" class="hover:text-primary mr-4"><i class="bi bi-chat"></i></a>
-                    <a href="#" class="hover:text-primary mr-4"><i class="bi bi-music-note-list"></i></a>
-                    <a href="#" class="hover:text-primary mr-4"><i class="bi bi-heart-fill"></i></a>
-                    <a href="#" class="hover:text-primary mr-4"><i class="bi bi-three-dots"></i></a>
-                    <a href="#" class="hover:text-primary mr-4"><i class="bi bi-volume-up"></i></a>
+                    <!-- END RIGHT SIDEBAR  -->
                 </div>
             </div>
         </div>
+
+        <!-- FOOTER  -->
+        <div class="footer-player fixed z-10 bottom-0 left-0 h-20 w-full flex justify-between items-center bg-dark-500 border-t-[1px] border-t-dark-100">
+            <div class="w-1/5 text-white flex justify-center items-center">
+                <a href="#" class="hover:text-primary"><i class="bi bi-shuffle text-2xl mr-2"></i></a>
+                <a href="#" class="hover:text-accent"><i class="bi bi-caret-left-fill text-2xl mr-2"></i></a>
+                <a href="#" class="hover:text-accent"><i class="bi bi-pause-circle-fill text-4xl mr-2"></i></a>
+                <a href="#" class="hover:text-accent"><i class="bi bi-caret-right-fill text-2xl mr-2"></i></a>
+                <a href="#" class="hover:text-accent"><i class="bi bi-repeat text-2xl"></i></a>
+            </div>
+            <div class="w-3/5 flex justify-center px-4">
+                <div class="w-14 h-14 mr-40 flex-shrink-0">
+                    <img class="w-full h-full object-fill" src="../public/img/album-cover-1.png" alt="on the ground" />
+                </div>
+                <div class="flex flex-col items-center w-2/3">
+                    <div class="song flex items-center">
+                        <p class="text-white text-lg font-semibold">On the Ground</p>
+                        <span class="bi bi-dot mx-2"></span>
+                        <p class="text-dark-100 text-md">Rose</p>
+                    </div>
+                    <div class="progress flex items-center w-full">
+                        <p>2:45</p>
+                        <div class="rounded-full bg-white h-1 flex-1 mx-2 overflow-x-hidden">
+                            <div class="bg-primary w-1/2 h-1"></div>
+                        </div>
+                        <p>2:45</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w-1/5 h-full border-l-[1px] border-l-dark-100 flex items-center justify-center text-xl">
+                <a href="#" class="hover:text-primary mr-4"><i class="bi bi-chat"></i></a>
+                <a href="#" class="hover:text-primary mr-4"><i class="bi bi-music-note-list"></i></a>
+                <a href="#" class="hover:text-primary mr-4"><i class="bi bi-heart-fill"></i></a>
+                <a href="#" class="hover:text-primary mr-4"><i class="bi bi-three-dots"></i></a>
+                <a href="#" class="hover:text-primary mr-4"><i class="bi bi-volume-up"></i></a>
+            </div>
+        </div>
+        <!-- END FOOTER  -->
     </body>
 </html>
